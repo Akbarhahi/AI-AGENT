@@ -1,0 +1,70 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hai", "halo", "hi", "apa kabar?", "hello"],
+      "responses": ["Halo! Ada yang bisa saya bantu?", "Hai, senang bertemu denganmu!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["selamat tinggal", "dadah", "sampai jumpa"],
+      "responses": ["Sampai jumpa lagi!", "Dadah!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["terima kasih", "makasih", "thanks", "terimakasih banyak", "makasih ya", "thank you", "trims", "makasih bwang"],
+      "responses": ["Sama-sama!", "Senang bisa membantu!"]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "bantuan",
+        "tolong saya",
+        "aku butuh bantuan di jakarta"
+      ],
+      "responses": ["Tentu, katakan saja apa yang kamu butuhkan.", "Tentu, saya akan coba bantu untuk urusan di {GPE}. Apa yang kamu butuhkan?"]
+    },
+    {
+      "tag": "about_person",
+      "patterns": [
+        "siapa itu Warren Buffet",
+        "ceritakan tentang Bill Gates",
+        "aku ingin tahu tentang Sam Altman"
+      ],
+      "responses": [
+        "Tentu, saya akan cari informasi tentang {PERSON}.",
+        "Siap! Mencari detail untuk {PERSON}.",
+        "Tentu, siapa nama yang ingin kamu ketahui?"
+      ]
+    },
+    {
+      "tag": "person_inquiry_followup",
+      "patterns": [
+        "siapa dia",
+        "siapa beliau",
+        "ceritakan tentangnya",
+        "ceritakan tentang dia",
+        "jelaskan lebih lanjut"
+      ],
+      "responses": ["Tentu, saya akan jelaskan."]
+    },
+    {
+      "tag": "outofscope",
+      "patterns": [
+        "jika 1 + 1 berapa?",
+        "code 4 4 4 5",
+        "apa warna langit",
+        "ceritakan sebuah lelucon"
+      ],
+      "responses": ["Maaf, saya tidak bisa menjawab pertanyaan seperti itu. Saya adalah chatbot sederhana."]
+    },
+    {
+      "tag": "fallback",
+      "responses": [
+        "Maaf, saya tidak mengerti maksud Anda. Bisa coba tanyakan dengan cara lain?",
+        "Hmm, saya belum dilatih untuk menjawab itu. Ada lagi yang bisa saya bantu?",
+        "Saya tidak yakin mengerti. Coba jelaskan lagi."
+      ]
+    }
+  ]
+}
